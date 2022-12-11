@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import  { DetallefacturaComponent } from './mantenimiento/detallefactura/detallefactura.component';
+import  { FacturaComponent } from './mantenimiento/factura/factura.component';
+import  { ProductosComponent } from './mantenimiento/productos/productos.component';
+import  { MantenimientoRoutingModule } from './mantenimiento/mantenimiento-routing.module';
+
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations:[],
+  imports:[
+    CommonModule, 
+    DetallefacturaComponent,
+    FacturaComponent,
+    ProductosComponent,
+    CommonModule,
+    MantenimientoRoutingModule
+  ]
 })
 export class AppModule { }
